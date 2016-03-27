@@ -1,12 +1,14 @@
 language: csharp
-solution: .server/server.sln
+
+environment:
+  solutionFile: server.sln
 
 notifications:
   slack: skinsroulette:FngoFqVgw37UgZ2MowuUcl20
   
 install:
   - sudo apt-get install nunit-console
-  - nuget restore ./src/yoursolution.sln
+  - nuget restore %solutionFile%
   
 script:
   - xbuild .server/server.sln
