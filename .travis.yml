@@ -1,2 +1,5 @@
 language: csharp
 solution: server.sln
+
+notifications:
+  slack: skinsroulette:FngoFqVgw37UgZ2MowuUcl20
