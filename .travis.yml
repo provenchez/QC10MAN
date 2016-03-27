@@ -1,11 +1,6 @@
 language: csharp
 solution: server.sln
-
-environment:
-  solutionFile: server.sln
-
-notifications:
-  slack: skinsroulette:FngoFqVgw37UgZ2MowuUcl20
-  
-before install:
-  cd server
+before_install:
+  - sudo apt-get install nunit-console
+before_script:
+  - nuget restore server.sln
