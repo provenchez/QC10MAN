@@ -3,3 +3,7 @@ solution: server.sln
 
 notifications:
   slack: skinsroulette:FngoFqVgw37UgZ2MowuUcl20
+  
+ before_deploy:
+  - cd ..
+  - if [ "$TRAVIS_BRANCH" = "client" ]; then cd client; else cd server;
