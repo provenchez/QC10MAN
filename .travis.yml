@@ -1,9 +1,12 @@
 language: csharp
-solution: server.sln
+solution: .server/server.sln
 
 notifications:
   slack: skinsroulette:FngoFqVgw37UgZ2MowuUcl20
-
-before_deploy:
-  - cd ..
-  - if [ "$TRAVIS_BRANCH" = "client" ]; then cd client; else cd server;
+  
+install:
+  - sudo apt-get install nunit-console
+  - nuget restore ./src/yoursolution.sln
+  
+script:
+  - xbuild .server/server.sln
