@@ -1,5 +1,5 @@
 language: csharp
-solution: /server/server.sln
+solution: ./server/server.sln
 before_install:
   - sudo apt-get install nunit-console
 
