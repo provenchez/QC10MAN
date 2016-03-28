@@ -6,4 +6,4 @@ install:
   - pip install Flask
  
 script: 
-  - py.test
+  python -m unittest discover
