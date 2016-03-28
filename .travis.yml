@@ -1,13 +1,7 @@
-language: csharp
-solution: ./server/server.sln
-before_install:
-  - sudo apt-get install nunit-console
-
-install:
-  - nuget restore ./server/server.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+language: python
+python:
+  - "2.7"
   
-script:
-  - xbuild /p:Configuration=Release ./server/server.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./serverTests/bin/Release/serverTests.dll
-
+install:
+  - pip install Flask
+ 
