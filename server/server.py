@@ -6,3 +6,4 @@ def main():
     return "flask app responding hello world !"
 
 if __name__ == "__main__":
+	server.run()
