@@ -4,7 +4,7 @@ server = Flask(__name__)
 
 @server.route("/")
 def main():
-    return "DERP DAVE"vvvvvvv
+    return "DERP DAVE"
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
