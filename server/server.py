@@ -3,8 +3,12 @@ from flask import Flask
 server = Flask(__name__)
 
 @server.route("/")
-def main():
+def index():
     return "DERP DAVE"
+
+@server.route("/roulette")
+def roulette():
+    return "roulette"
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
