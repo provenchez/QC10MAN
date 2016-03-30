@@ -3,7 +3,7 @@ python:
 - '2.7'
 install:
 - pip install Flask
-script: python -m unittest discover -p "*Tests.py"
+script: python -m unittest discover server -p "*Tests.py"
 deploy:
   provider: heroku
   api_key:
