@@ -4,6 +4,10 @@ python:
 install:
 - pip install Flask
 script: python -m unittest discover server -p "*Tests.py"
+
+notifications:
+  slack: skinsroulette:9WE1FvJw7IOzPSvktewTbv8a
+  
 deploy:
   provider: heroku
   api_key:
