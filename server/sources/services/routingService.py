@@ -13,7 +13,7 @@ class RoutingService:
     def declareRoutes(self):
         @self.m_server.route("/")
         def index():
-            return "DERP DAVE"
+            return "DERP SAM"
 
         @self.m_server.route("/roulette")
         def roulette():
