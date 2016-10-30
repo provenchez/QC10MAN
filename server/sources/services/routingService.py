@@ -13,7 +13,7 @@ class RoutingService:
     def declareRoutes(self):
         @self.m_server.route("/")
         def index():
-            return 	"Win	Loss	(+/-)"
+            return 	"https://docs.google.com/spreadsheets/d/1QG25rLEcwNMQAe03XlUIxlDlsd-l7lhqJ9pfITot85Y/edit#gid=0"
 
         @self.m_server.route("/roulette")
         def roulette():
