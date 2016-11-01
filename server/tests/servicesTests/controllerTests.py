@@ -1,5 +1,7 @@
 import unittest
-from sources.controller.controller import Controller
+
+from server.sources.controller.controller import Controller
+
 
 class ControllerTests(unittest.TestCase):
 
