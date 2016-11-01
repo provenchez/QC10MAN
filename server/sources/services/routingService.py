@@ -11,8 +11,6 @@ class RoutingService:
         def index():
             return 	"Vez est gay"
 
-        @self.m_server.route('/')
-
         @self.m_server.route('/index')
         def index():
             return "Hello, World!"
