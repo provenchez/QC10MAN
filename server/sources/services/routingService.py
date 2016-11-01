@@ -8,7 +8,7 @@ class RoutingService:
 
     def declareRoutes(self):
         @self.m_server.route("/")
-        def index():
+        def home():
             return 	"Vez est gay"
 
         @self.m_server.route('/index')
