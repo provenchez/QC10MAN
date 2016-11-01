@@ -16,7 +16,6 @@ class RoutingService:
             return "Hello, World!"
 
     def launchRoutingService(self):
-        self._launchDomainServices()
         self.declareRoutes()
         port = int(os.environ.get('PORT', 5000))
         self.m_server.run(host='0.0.0.0', port=port, debug=True)
